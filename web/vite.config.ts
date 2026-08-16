@@ -12,10 +12,10 @@ export default defineConfig({
       allow: ['..']
     }
   },
-  publicDir: path.resolve(__dirname, '../'),
+  // publicDir: path.resolve(__dirname, '../'),  // 👈 删除或注释掉这行
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    copyPublicDir: false,
+    // copyPublicDir: false,  // 👈 如果注释了 publicDir，这行也可以删除
   },
 })
