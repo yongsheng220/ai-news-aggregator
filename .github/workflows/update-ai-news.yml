@@ -76,6 +76,8 @@ jobs:
           cp ../data/latest-7d.json dist/data/
           cp ../data/source-status.json dist/data/
           cp ../data/opml-feeds.json dist/data/ 2>/dev/null || true
+          cp ../CNAME dist/ 2>/dev/null || true   # 复制 CNAME 文件
+          touch dist/.nojekyll                     # 禁用 Jekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
