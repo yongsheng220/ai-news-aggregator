@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.GITHUB_PAGES ? '/ai-news-aggregator/' : '/',
+  base: '/',
   server: {
     port: 3000,
     open: true,
